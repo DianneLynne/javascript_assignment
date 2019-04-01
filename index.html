@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <script type="text/JavaScript">
+
+
+
+// JavaScript Challenge
+/* 
+Complete the following and upload the code as a new repo on GitHub. 
+You can work with your teammates or use Google to help with the solution if you get stuck. 
+Add each section as another code block and console.log the answer. 
+Using the below code
+*/
+
+
+var house = {
+areas: [{
+livingRoom: {items: ['tv','sofa']},
+bedroomOne: {items: ['bed','washing machine'],windows: 3},
+bedroomTwo:{items: ['bed','bed','desk'],windows: 4},
+kitchen:{items: ['fridge','broken chair']}
+}],
+garden: [true, 'Red Rose'],
+garage: {car: {color: 'red', wheels: 4,honk: ()=>{alert("Beep")} }}
+};
+
+/*
+// Find total number of areas in the house
+house.area
+console.log()
+*/
+
+// Add a dining table to the living room
+house.areas[0].livingRoom.items.push('dining table');
+console.log("The items in the living room are a " +house.areas[0].livingRoom.items);
+
+// Add a stove to the kitchen
+house.areas[0].kitchen.items.push('stove');
+console.log("The items in the kitchen are a " +house.areas[0].kitchen.items);
+
+// Remove the washing machine from bedroomOne
+house.areas[0].bedroomOne.items.pop();
+console.log("The items in the bedroom one is only a " +house.areas[0].bedroomOne.items);
+
+/*
+// Find the total number of beds in all rooms
+console.log()
+*/
+
+// Change the color of the car to blue Replace string red to blue
+const carColor= house.garage.car.color;
+const carColorNew= carColor.replace('red', 'blue');
+console.log("The car color is "+carColorNew);
+/*
+// Add a another car to the garage with a honk function
+House.area.garage.car2
+House.area.garage.car2.honk.
+console.log()
+
+/*
+// Make the new car honk
+House.area.garage.car2.honk.push alert"honk"
+console.log()
+*/
+
+// Change the 'broken chair' in the kitchen to 'new chair'
+const chairStatus= house.areas[0].kitchen.items[1];
+const chairStatusNew= chairStatus.replace('broken chair', 'new chair');
+console.log("There is a "+chairStatusNew+" in the kitchen");
+
+
+// If the house has a garden, console.log the name of the flower
+let gardenFlower=house.garden[0];
+
+if (gardenFlower=true) {
+    console.log("There is a "+ house.garden[1] + " in the garden");
+} else {
+    console.log("There are no flowers in the garden");
+};
+
+
+
+
+
+        </script>
+    </body>
+</html>
